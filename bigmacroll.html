@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Big Mac Rolle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo_small.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style_headerfooter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML(); addAll(bigMacRoll)">
+    <div class="header" w3-include-html="templates/navigation.html"></div>
+
+    <main>
+        <h1 id="headline"></h1>
+
+        <section class="recipe-head">
+            <img id="recipe-image" src="" alt="">
+            <div class="recipe-keypoints-container"></div>
+        </section>
+
+        <section class="recipe-ingredients">
+            <div class="ingredient-calculator">
+                Zutaten für
+                <div class="input-and-button">
+                    <input id="input-portions" type="number" value="4" min="1" max="1000" step="1" title="">
+                    <button id="portions-btn" onclick="addTable(bigMacRoll)">Portionen</button>
+                </div>
+            </div>
+
+            <table id="ingredients">
+                <tbody id="table"></tbody>
+            </table>
+        </section>
+
+        <section class="recipe-preparation">
+            <h2>Zubereitung</h2>
+            <div class="recipe-keypoints-container"></div>
+            <p id="description"></p>
+        </section>
+
+        <section class="recipe-creator">
+            <h3>Rezept erstellt von</h3>
+            <div id="profile"></div>
+        </section>
+    </main>
+
+
+    <div class="footer" w3-include-html="templates/footer.html"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo_small.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style_headerfooter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML()">
+    <div class="header" w3-include-html="templates/navigation.html"></div>
+
+    <main>
+        <section class="recipe-of-the-day">
+            <img src="img/bruschetta-kartoffeln.jpg" alt="Bruschetta-Kartoffeln">
+            <div>
+                <h2>Rezept des Tages: Bruschetta-Kartoffeln</h2>
+                <p>Unsere Bruschetta-Kartoffeln sind die perfekte Kombination aus knusprigen Kartoffeln und würziger
+                    Bruschetta! Eine leckere Mischung aus Tomaten, Knoblauch, Lauchwiebeln und Oliven über goldbraun
+                    gebackenen Kartoffeln schaffen ein unwiderstehliches Aroma. Ob als Beilage oder als Hauptgericht,
+                    unsere Bruschetta-Kartoffeln sind ein Gaumenschmaus für alle Kartoffelliebhaber. Probiere sie jetzt
+                    und lass dich von ihrem köstlichen Geschmack verführen!</p>
+                <a class="link-button" href="bruschettapotatoes.html">Rezept öffnen</a>
+            </div>
+        </section>
+
+        <section class="try-something-new">
+            <h2>Lust auf was Neues?</h2>
+            <div class="recipe-proposals">
+                <a href="bruschettapotatoes.html">
+                    <img src="img/bruschetta-kartoffeln.jpg" alt="Bruschetta-Kartoffeln">
+                    <b class="text-center">Bruschetta-Kartoffeln</b>
+                </a>
+                <a href="bigmacroll.html">
+                    <img src="img/familienkostbild_1015_low-carb-big-mac-rolle.jpg" alt="Big Mac Rolle">
+                    <b class="text-center">Low-carb Big Mac Rolle</b>
+                </a>
+                <a href="pizzabuns.html">
+                    <img src="img/zarouri-hicham-J07LwIkW-cw-unsplash.jpg" alt="Pizzaschnecken">
+                    <b class="text-center">Pizzaschnecken mit Oliven</b>
+                </a>
+            </div>
+        </section>
+
+        <section class="food-guide">
+            <h2 class="text-center">Die Kunst des Wok-Kochens: Schnell, lecker und
+                gesund</h2>
+            <div>
+                <p>Entdecke die gesunde und schmackhafte Welt des Wok-Kochens! Die Zubereitung von Gemüse und
+                    Fleisch in einem Wok auf hoher Hitze erhält nicht nur ihre Nährstoffe und den Geschmack, sondern ist
+                    auch eine schnelle und praktische Möglichkeit, eine Vielfalt an Geschmacksrichtungen mit Gewürzen
+                    und Kräutern zu erleben. Finde heraus,
+                    wie du schnell und einfach eine
+                    gesunde Mahlzeit auf den Tisch zaubern und dabei Zeit und Geld sparen kannst:
+                    <a class="inner-text-link" href="kochen_mit_wok.html">Mehr erfahren...</a>
+                </p>
+                <a href="kochen_mit_wok.html"><img src="img/wok.jpg" alt="Wok"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="footer" w3-include-html="templates/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
